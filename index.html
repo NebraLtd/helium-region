@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nebra Region Tool</title>
   <link rel="stylesheet" href="css/nebraRegionTool.css">
+  <script type ="module" src ="js/countryDataCheat.js"></script>
+  <script type ="module" src ="js/collectData.js"></script>
 
   <meta name="theme-color" content="#0f81ce">
 
   <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
-
-  <script type = "text/javascript" src="js/collectData.js"></script>
 
   <nav class="header">
     <div class="container-fluid">
@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
   <main class="container">
 
     <div class="general-text-box">
@@ -318,14 +317,13 @@
             <option value="zw">Zimbabwe</option>
           </select>
         </div>
-
-        <button class="submit-button" type="submit" onclick="hereWeGo();">Find Product</button>
+        <button class="submit-button" type="submit" onclick="hereWeGo();">Search</button>
       </div>
     </div>
 
     <div class="outer-results">
       <div class="results">
-        <span id="finalString"></span>
+        <span class="b-side" id="finalString"></span>
         <span id="finalValue"></span>
       </div>
     </div>
@@ -338,11 +336,11 @@
 <footer>
   <div class="footer-container">
     <div class="footer-text-collective">
-      <h5>This website uses data from the <a
-          href="https://github.com/helium/miner/blob/master/priv/countries_reg_domains.csv">Helium Miner</a> and makes
+      <h5>This website uses data from the&nbsp;<a
+          href="https://github.com/helium/miner/blob/master/priv/countries_reg_domains.csv">Helium Miner</a>&nbsp;and makes
         it simple to search. While every attempt has been made to ensure this data is correct, please refer to your
         local regulations to confirm.</h5>
-      <h5>A project by <a href="https://twitter.com/nebraltd">@NebraLtd</a>, &copy; NebraLtd. 2021</h5>
+      <h5>A&nbsp;<a href="https://twitter.com/nebraltd">@NebraLtd</a>&nbsp;project | &copy; NebraLtd. 2021</h5>
       <br />
     </div>
   </div>
