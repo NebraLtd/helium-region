@@ -1,0 +1,11 @@
+{
+    "name": "nebra-region-tool",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {},
+    "keywords": [],
+    "author": "Samuel Liechty",
+    "license": "",
+    "type": "module"
+}
