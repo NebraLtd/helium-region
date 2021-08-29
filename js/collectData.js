@@ -1,9 +1,9 @@
 function hereWeGo(){
-    var v = document.getElementById("country_selector_code");
+    const params = new URLSearchParams(window.location.search)
     var fq;
     var countryName;
     for(let i = 0; i < 245; i++){
-        if(allData[i].countryCode.toLowerCase() == v.value){
+        if(allData[i].countryCode.toLowerCase() == params.get('country_selector_code')){
             fq = allData[i].frequency;
             countryName = allData[i].countryName;
             break;
