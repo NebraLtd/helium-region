@@ -1,9 +1,9 @@
 function hereWeGo(){
-    var v = document.getElementById("countryList");
+    var v = document.getElementById("country_selector_code");
     var fq;
     var countryName;
     for(let i = 0; i < 245; i++){
-        if(allData[i].countryCode.toLowerCase() == v.options[v.selectedIndex].value){
+        if(allData[i].countryCode.toLowerCase() == v.value){
             fq = allData[i].frequency;
             countryName = allData[i].countryName;
             break;
