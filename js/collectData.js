@@ -1,5 +1,5 @@
 function hereWeGo(){
-    var v = $("#country_selector_code").countrySelect("getSelectedCountryData");
+    var v = $("#country_selector").countrySelect("getSelectedCountryData");
     var fq;
     var countryName;
     for(let i = 0; i < 245; i++){
