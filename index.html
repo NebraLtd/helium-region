@@ -8,6 +8,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/countrySelect.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="css/nebraRegionTool.css">
+    <script type ="module" src ="js/countryDataCheat.js"></script>
+    <script type ="module" src ="js/collectData.js"></script>
+
     <!-- Favicons -->
     <meta name="theme-color" content="#03a9f4">
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
@@ -44,14 +48,11 @@
 
   </head>
   <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <div class="container-fluid">
-      <a class="navbar-logo" href="https://www.nebra.com">
-        <img src="//cdn.shopify.com/s/files/1/0071/2281/3001/files/Nebra_Blue_1_467x80.png?v=1541637039" alt="Nebra Ltd" data-rimg="" srcset="//cdn.shopify.com/s/files/1/0071/2281/3001/files/Nebra_Blue_1_467x80.png?v=1541637039 1x" class="navbar-logo-img">
-      </a>
-    </div>
-  </nav>
+    <a class="navbar-brand" href="/">Nebra Region Tool</a>
+  </div>
+</nav>
 
 <main class="container">
 
@@ -78,10 +79,17 @@
   				<label for="country_selector_code">...and the selected country code will be updated here</label>
   			</div>
         <br/>
-  			<button type="submit" class="btn btn-primary">Find Region</button>
+  			<button type="submit" class="btn btn-primary onclick="hereWeGo();">Find Region</button>
       </form>
     </div>
   </div>
+
+    <div class="outer-results">
+      <div class="results">
+        <span class="b-side" id="finalString"></span>
+        <span id="finalValue"></span>
+      </div>
+    </div>
 
 </main><!-- /.container -->
 
